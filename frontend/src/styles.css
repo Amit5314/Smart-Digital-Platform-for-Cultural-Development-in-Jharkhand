@@ -1,0 +1,58 @@
+:root {
+  --accent: #0b6e4f;
+}
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f6f8fa;
+}
+.app-root {
+  min-height: 100vh;
+}
+.container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+.navbar {
+  background: white;
+  padding: 12px 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+.navbar button {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  margin-bottom: 16px;
+  border: 2px solid black;
+}
+h1,
+h2 {
+  margin: 8px 0;
+}
+input,
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+}
+.btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}

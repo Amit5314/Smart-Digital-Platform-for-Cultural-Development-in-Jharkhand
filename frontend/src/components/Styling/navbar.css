@@ -1,0 +1,84 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  gap: 2rem;
+}
+
+/* Logo */
+.navbar .logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Middle nav buttons */
+.nav-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/* Default nav buttons */
+.navbar button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  padding: 0.3rem 0.8rem;
+  color: #333;
+}
+
+/* Underline animation for normal buttons */
+.navbar button:not(.admin-btn)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #2e7d32;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar button:not(.admin-btn):hover::after,
+.navbar button:not(.admin-btn):focus::after {
+  width: 100%;
+  left: 50%;
+}
+
+
+
+.navbar .right-section .admin-btn:hover {
+  background: #2e7d32;
+  color: white;
+}
+
+/* Push right-section to the right */
+.navbar .right-section {
+  margin-left: auto;
+}
+/* Admin button special style */
+.navbar .right-section .admin-btn {
+  background: white;
+  border: 2px solid #2e7d32; /* green border */
+  border-radius: 8px;         /* slightly more rounded */
+  color: #2e7d32;
+  padding: 0.6rem 1.2rem;     /* increased height and width */
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* subtle shadow */
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.navbar .right-section .admin-btn:hover {
+  background: #2e7d32;
+  color: white;
+  transform: translateY(-2px); /* slight lift on hover */
+}
